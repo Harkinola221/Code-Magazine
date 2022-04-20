@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #444;
+
+  border-top: 10px solid#1098ad;
+}
+
+.container {
+  width: 1200px;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /*padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;*/
+  padding: 15px 30px;
+  margin-bottom: 30px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  font-size: 15px;
+  text-align: center;
+}
+.post-header {
+  margin-bottom: 20px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 4px solid #1098ad;
+  padding: 50px 21px;
+  /* flex: 300px;
+  /*float: right;*/
+  border-bottom: 4px solid #1098ad;
+}
+
+h1,
+h2,
+h3 {
+  color: #482af3;
+}
+h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  /*float: left;*/
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 12;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 12;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Body {
+  border-top: 10px solid #1098ad;
+  font-family: sans-serif;
+  color: #444;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+ul,
+ol {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 13;
+  margin-bottom: 9px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+.reason {
+  list-style: square;
+}
+
+footer p {
+  font-size: 12px;
+  /*background-color: black;*/
+}
+
+/*
+header p{
+  font-style: ;
+}
+*/
+#author {
+  font-style: italic;
+  color: #1098ad;
+}
+
+.related-author {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+figcaption {
+  color: #1098ad;
+  font-size: small;
+  font-family: sans-serif;
+}
+
+.nav {
+  font-size: 20px;
+  word-spacing: 10px;
+  padding-left: 20px;
+  padding: 8px;
+  margin-bottom: 0;
+  text-align: left;
+  /*display: inline-block;*/
+  /*float: right;*/
+}
+
+.related {
+  list-style: none;
+}
+
+article {
+  margin-bottom: 60px;
+  /*width: 825px;
+  float: left;*/
+  /*flex: 0 0 825px;*/
+}
+
+a:link {
+  color: seagreen;
+  text-decoration: none;
+}
+a:visited {
+  color: #0aecec;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  border: 4px lightgreen;
+}
+a:active {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#copyright {
+  color: rgb(2, 0, 0);
+  /*height: 200px;*/
+  font-size: 15px;
+  font-family: serif;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: rgb(235, 235, 232);
+}
+
+footer p {
+  color: black;
+}
+
+/*.footer {
+  clear: both;
+}*/
+
+.post-image {
+  width: 55%;
+  height: 250px;
+  margin-top: 8px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+top::first-letter {
+  font-size: 40px;
+}
+/*h3 + p::first-line {
+  color: blue;
+}*/
+
+h2 {
+  /*background-color: salmon;*/
+  position: relative;
+}
+
+h2::after {
+  content: "NEW";
+  background-color: #ffe70e;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -9px;
+  right: -15px;
+}
+
+/*
+.author-img {
+  float: left;
+  margin-bottom: 150px;
+}
+
+.author {
+  /* padding-left: 120px;*/
+/*padding-top: 12px;
+  float: left;
+  margin-left: 20px;
+}
+*/
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.author {
+  margin: 0;
+  margin-left: 18px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 20px;
+}
+.related-link:link {
+  font-weight: bold;
+  font-size: 17px;
+  font-style: normal;
+  margin-bottom: 7px;
+  display: block;
+}
+.related-author {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/*.row {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+footer {
+  grid-column: 1/-1;
+}
